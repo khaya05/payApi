@@ -2,16 +2,7 @@ import { nanoid } from 'nanoid';
 import {
   bankingAndCoverageIcon,
   costumerPaymentsIcon,
-  facebookIcon,
-  googleIcon,
-  hpIcon,
-  linkedinIcon,
-  microsoftIcon,
-  nvidiaIcon,
-  oracleIcon,
   personalFinancesIcon,
-  teslaIcon,
-  twitterIcon,
 } from '../assets';
 
 export const links = [
@@ -20,32 +11,6 @@ export const links = [
   { id: nanoid(), name: 'contact', path: '/contact' },
 ];
 
-export const brands = [
-  {
-    id: nanoid(),
-    name: 'tesla',
-  },
-  {
-    id: nanoid(),
-    name: 'microsoft',
-  },
-  {
-    id: nanoid(),
-    name: 'hewlett-packard',
-  },
-  {
-    id: nanoid(),
-    name: 'oracle',
-  },
-  {
-    id: nanoid(),
-    img: googleIcon,
-  },
-  {
-    id: nanoid(),
-    name: 'nvidia',
-  },
-];
 
 export const features = [
   {
@@ -71,20 +36,137 @@ export const features = [
   },
 ];
 
-export const socials = [
+export const plans = [
   {
     id: nanoid(),
-    name: 'facebook',
-    icon: facebookIcon,
+    plan: 'free',
+    price: '0.00',
+    description:
+      'Build and test using our core set of products with up to 100 API requests ',
+    features: [
+      {
+        id: nanoid(),
+        feature: 'transactions',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'auth',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'identity',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'investments',
+        included: false,
+      },
+      {
+        id: nanoid(),
+        feature: 'assets',
+        included: false,
+      },
+      {
+        id: nanoid(),
+        feature: 'liabilities',
+        included: false,
+      },
+      {
+        id: nanoid(),
+        feature: 'income',
+        included: false,
+      },
+    ],
   },
   {
     id: nanoid(),
-    name: 'twitter',
-    icon: twitterIcon,
+    plan: ' basic',
+    price: '249.00',
+    description:
+      'Build and test using our core set of products with up to 100 API requests ',
+    features: [
+      {
+        id: nanoid(),
+        feature: 'transactions',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'auth',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'identity',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'investments',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'assets',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'liabilities',
+        included: false,
+      },
+      {
+        id: nanoid(),
+        feature: 'income',
+        included: false,
+      },
+    ],
   },
   {
     id: nanoid(),
-    name: 'linkedin',
-    icon: linkedinIcon,
+    plan: 'premium',
+    price: '499.00',
+    description:
+      'Get tailored solutions, volume pricing, and dedicated support for your team ',
+    features: [
+      {
+        id: nanoid(),
+        feature: 'transactions',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'auth',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'identity',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'investments',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'assets',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'liabilities',
+        included: true,
+      },
+      {
+        id: nanoid(),
+        feature: 'income',
+        included: true,
+      },
+    ],
   },
 ];

@@ -1,8 +1,12 @@
 import React from 'react'
+import { Heading, Plans } from '../components'
 
 function Pricing() {
   return (
-    <div>Pricing</div>
+    <main>
+      <Heading heading={'Pricing'} />
+      <Plans />
+    </main>
   )
 }
 

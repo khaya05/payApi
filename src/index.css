@@ -72,6 +72,7 @@ svg {
   --dark-blue: hsla(207, 28%, 15%, 1);
   --blue: hsla(207, 33%, 32%, 1);
   --blue-025: hsla(207, 33%, 32%, 0.25);
+  --blue-05: hsla(207, 33%, 32%, 0.5);
   --light-blue: hsla(207, 16%, 50%, 1);
   --very-light-gray-15: hsla(207, 58%, 99%, 0.15);
   --very-light-gray-07: hsla(207, 58%, 99%, 0.7);
@@ -140,7 +141,7 @@ h2 {
 }
 
 @media (min-width: 48px) {
-  .about-section{
+  .about-section {
     max-width: 1110px;
   }
   .about-section {
@@ -157,15 +158,22 @@ h2 {
 
 @media (min-width: 90em) {
   .pages-heading {
+    margin: 0;
+    padding: 0;
     text-align: start;
     line-height: 56px;
     font-size: 56px;
     margin-top: 82px;
     width: 47%;
-    padding:0;
+    margin-bottom: 42px;
   }
 }
 
-.the-people{
+.the-people {
   margin-bottom: 2rem;
+}
+
+.heading-container {
+  max-width: 1110px;
+  margin-inline: auto;
 }
