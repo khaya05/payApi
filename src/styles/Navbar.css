@@ -4,6 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: 'Public Sans';
+  padding-inline: 24px
 }
 
 @media (min-width:40em) {

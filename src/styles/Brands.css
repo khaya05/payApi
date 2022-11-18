@@ -11,6 +11,10 @@
   flex-direction: column-reverse;
 }
 
+.brand-icon path{
+  fill: var(--very-light-gray);
+}
+
 @media (min-width: 48em) {
   #brands {
     padding-block: 88px;

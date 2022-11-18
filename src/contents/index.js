@@ -24,31 +24,25 @@ export const brands = [
   {
     id: nanoid(),
     name: 'tesla',
-    img: teslaIcon,
   },
   {
     id: nanoid(),
-    img: microsoftIcon,
     name: 'microsoft',
   },
   {
     id: nanoid(),
-    img: hpIcon,
-    name: 'hewlett packard',
+    name: 'hewlett-packard',
   },
   {
     id: nanoid(),
-    img: oracleIcon,
     name: 'oracle',
   },
   {
     id: nanoid(),
     img: googleIcon,
-    name: 'google',
   },
   {
     id: nanoid(),
-    img: nvidiaIcon,
     name: 'nvidia',
   },
 ];

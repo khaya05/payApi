@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link , NavLink} from 'react-router-dom';
 import { logo } from '../../assets';
 import { links, socials } from '../../contents';
 

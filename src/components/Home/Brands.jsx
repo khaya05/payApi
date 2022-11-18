@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
-import { brands } from '../../contents';
+import { ReactComponent as Tesla } from '../../assets/shared/desktop/tesla.svg';
+import { ReactComponent as Microsoft } from '../../assets/shared/desktop/microsoft.svg';
+import { ReactComponent as HP } from '../../assets/shared/desktop/hewlett-packard.svg';
+import { ReactComponent as Oracle } from '../../assets/shared/desktop/oracle.svg';
+import { ReactComponent as Google } from '../../assets/shared/desktop/google.svg';
+import { ReactComponent as Nvidia } from '../../assets/shared/desktop/nvidia.svg';
 import '../../styles/Brands.css';
 
 function Brands() {
@@ -17,11 +22,24 @@ function Brands() {
           <Link to="./about">about us</Link>
         </div>
         <ul className="brands__right">
-          {brands.map(({ id, img, name }) => (
-            <li key={id}>
-              <img src={img} alt={name} />
-            </li>
-          ))}
+          <li className="brand-icon">
+            <Tesla />
+          </li>
+          <li className="brand-icon">
+            <Microsoft />
+          </li>
+          <li className="brand-icon">
+            <HP />
+          </li>
+          <li className="brand-icon">
+            <Oracle />
+          </li>
+          <li className="brand-icon">
+            <Google />
+          </li>
+          <li className="brand-icon">
+            <Nvidia />
+          </li>
         </ul>
       </div>
     </section>
