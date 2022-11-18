@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home, About, Pricing,Contact } from './pages';
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, ReadyToStart } from './components';
 
 import './App.css';
 
@@ -15,6 +15,7 @@ function App() {
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <ReadyToStart />
       <Footer />
     </BrowserRouter>
   );

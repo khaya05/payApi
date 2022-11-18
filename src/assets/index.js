@@ -16,3 +16,5 @@ export { default as costumerPaymentsIcon } from './home/desktop/icon-consumer-pa
 export { default as facebookIcon } from './shared/desktop/facebook.svg';
 export { default as twitterIcon } from './shared/desktop/twitter.svg';
 export { default as linkedinIcon } from './shared/desktop/linkedin.svg';
+export { default as teamMobile } from './about/mobile/image-team-members.jpg';
+export { default as teamDesktop } from './about/desktop/image-team-members.jpg';

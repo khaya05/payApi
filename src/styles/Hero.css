@@ -1,10 +1,13 @@
 header {
   padding: 0 24px;
+  margin-bottom: 80px;
+}
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 80px;
 }
 
 .hero-container h1 {
@@ -28,46 +31,46 @@ header p a {
 
 header figure {
   padding: 0;
-  margin: 0;
-  width: 128px;
-  height: 240px;
-  display: grid; place-items: center;
-}
-
-header figure img{
-  margin: 0;
-  border: 1px solid blue;
-  /* height: 100%; */
-  /* width: 100%; */
+  margin: 0 auto 24px;
+  width: 51.8%;
+  display: grid;
+  place-items: center;
 }
 
 @media (min-width: 48em) {
   header figure {
-    width: 159px;
-    height: 300px;
-    border: 1px solid green;
+    width: 26%;
+    margin-bottom: 48px;
   }
-
-  header figure img {
-    object-fit: cover;
-  }
-
-
-  /* header figure  */
-
-  /* .hero-container h1 {
-    width: 23ch;
-  } */
 }
 
 @media (min-width: 90em) {
-  header {
-    flex-direction: row;
+  header{
+    margin-top: 74px;
+  }
+  .header__container {
+    max-width: 1111px;
+    margin-inline: auto;
+    flex-direction: row-reverse;
+    gap: 20%;
     /* justify-content: ; */
   }
 
   header figure {
-    width: 263px;
-    height: 500px;
+    max-width: 263px;
+    /* height: 500px; */
+  }
+
+  .header__main-container{
+    max-width: 546px;
+  }
+  .hero-container h1 {
+    
+    text-align: start;
+  }
+
+  .header__main-container p {
+    text-align: start;
+    margin-left: 3%;
   }
 }

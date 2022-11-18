@@ -1,3 +1,16 @@
+.simple-ui-figure{
+  width: 87.466%;
+  margin-inline: auto;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 48em) {
+  .simple-ui-figure{
+    width: 63.35%
+  }
+  
+}
+
 @media (min-width: 90em) {
   #simple-ui .section__container {
     flex-direction: row-reverse;

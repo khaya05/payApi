@@ -5,7 +5,7 @@ function SimpleUI() {
   return (
     <section id="simple-ui">
       <div className="section__container">
-        <figure className="simple-ui-figure-container section__figur">
+        <figure className="simple-ui-figure">
           <img src={simpleUIIcon} alt="" aria-hidden="true" />
         </figure>
         <div className="simple-ui__right section__right">

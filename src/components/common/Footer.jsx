@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link , NavLink} from 'react-router-dom';
-import { logo } from '../../assets';
-import { links, socials } from '../../contents';
+import { Link, NavLink } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/shared/desktop/logo.svg';
+import { ReactComponent as Facebook } from '../../assets/shared/desktop/facebook.svg';
+import { ReactComponent as Twitter} from '../../assets/shared/desktop/twitter.svg';
+import { ReactComponent as Linkedin } from '../../assets/shared/desktop/linkedin.svg';
+import { links } from '../../contents';
 
 import '../../styles/Footer.css';
 
@@ -10,11 +13,12 @@ function Footer() {
     <footer>
       <div className="footer__container">
         <div className="footer__left">
-          <figure>
+          <div className="footer__logo-container">
             <Link to="/">
-              <img src={logo} alt="logo" />
+              <Logo />
             </Link>
-          </figure>
+          </div>
+
           <ul className="footer__nav-links">
             {links.map(({ id, name, path }) => (
               <li key={id}>
@@ -23,14 +27,17 @@ function Footer() {
             ))}
           </ul>
         </div>
-        <ul>
-          {socials.map(({ id, name, icon }) => (
-            <li key={id}>
-              <a href="#">
-                <img src={icon} alt="name" />
-              </a>
-            </li>
-          ))}
+
+        <ul className='socials'>
+          <li className="social-icon">
+            <Facebook />
+          </li>
+          <li className="social-icon">
+            <Twitter />
+          </li>
+          <li className="social-icon">
+            <Linkedin />
+          </li>
         </ul>
       </div>
     </footer>
