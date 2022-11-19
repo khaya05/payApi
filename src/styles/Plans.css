@@ -63,7 +63,7 @@
   color: var(--blue);
 }
 
-.request-access {
+.secondary-button {
   border: 1px solid var(--blue);
   color: var(--blue);
   width: 168px;
@@ -76,7 +76,7 @@
   /* transition: all 350ms; */
 }
 
-.request-access:hover {
+.secondary-button:hover {
   cursor: pointer;
   background-color: var(--blue);
   color: var(--very-light-gray);

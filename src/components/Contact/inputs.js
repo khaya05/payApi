@@ -4,6 +4,7 @@ export const inputs = [
   {
     id: nanoid(),
     name: 'name',
+    label: 'name',
     type: 'text',
     placeholder: 'name',
     errorMessage: "This field can't be empty",
@@ -13,6 +14,7 @@ export const inputs = [
   {
     id: nanoid(),
     name: 'email',
+    label: 'email',
     type: 'email',
     placeholder: 'email address',
     errorMessage: "This field can't be empty",
@@ -22,6 +24,7 @@ export const inputs = [
   {
     id: nanoid(),
     name: 'company name',
+    label: 'company name',
     type: 'text',
     placeholder: 'company name',
     errorMessage: "This field can't be empty",
@@ -31,6 +34,7 @@ export const inputs = [
   {
     id: nanoid(),
     name: 'title',
+    label: 'title',
     type: 'text',
     placeholder: 'title',
     errorMessage: "This field can't be empty",
@@ -40,6 +44,7 @@ export const inputs = [
   {
     id: nanoid(),
     name: 'name',
+    label: 'name',
     type: 'textarea',
     placeholder: 'message',
     errorMessage: "This field can't be empty",

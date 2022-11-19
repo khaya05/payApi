@@ -30,7 +30,7 @@ function Plans() {
             ))}
           </ul>
 
-          <button type="button" className="request-access">
+          <button type="button" className="secondary-button">
             request access
           </button>
         </div>

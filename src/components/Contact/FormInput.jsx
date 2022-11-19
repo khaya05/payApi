@@ -1,9 +1,14 @@
-import React from 'react'
+import '../../styles/FormInput.css'
 
-function FormInput() {
+function FormInput(props) {
+  const { errorMessage, label, onChange, id, ...inputProps } = props;
   return (
-    <div>FormInput</div>
-  )
+    <div className='form-input'>
+      <label>{label}</label>
+      <input {...inputProps} onChange={onChange } />
+      <span>{errorMessage}</span>
+    </div>
+  );
 }
 
-export default FormInput
+export default FormInput;

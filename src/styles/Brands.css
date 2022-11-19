@@ -11,7 +11,7 @@
   flex-direction: column-reverse;
 }
 
-.brand-icon path{
+.companies__container .brand-icon path {
   fill: var(--very-light-gray);
 }
 
@@ -75,11 +75,11 @@
 }
 
 @media (min-width: 90em) {
-  #brands{
+  #brands {
     padding-block: 100px;
   }
 
-  .brands__container{
+  .brands__container {
     flex-direction: row;
     max-width: 1110px;
     margin-inline: auto;

@@ -1,11 +1,12 @@
 import React from 'react';
-import Brands from '../Home/Brands';
 import Form from './Form';
 import { Companies } from '../';
 
+import '../../styles/FormAndBrands.css'
+
 function FormAndBrands() {
   return (
-    <div>
+    <div className='form-and-brands-container'>
       <div className="form___container">
         <Form />
       </div>
