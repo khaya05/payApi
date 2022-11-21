@@ -8,13 +8,21 @@ function Form() {
   const [values, setValues] = useState({
     name: '',
     email: '',
-    companyName: '',
+    'company name': '',
     title: '',
     message: '',
+    isSubscribed: false,
   });
 
   const handleChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
+    const { name, value, className } = e.target;
+    setValues((oldData) => {
+      return {
+        ...oldData,
+        [className === 'mark' ? 'isSubscribed' : name]:
+          className === 'mark' ? !oldData.isSubscribed : value,
+      };
+    });
   };
 
   const handleSubmit = (e) => {
@@ -24,16 +32,32 @@ function Form() {
   return (
     <form onSubmit={handleSubmit}>
       {inputs.map((input) => (
-        <FormInput {...input} on onChange={handleChange} key={input.id} />
+        <FormInput
+          key={input.id}
+          {...input}
+          onChange={handleChange}
+          value={values[input.name]}
+        />
       ))}
+
       <div className="checkbox__container">
-        <label htmlFor="subscribe" className='label'>
+        <label htmlFor="subscribe" className="label">
           Stay up-to-date with company announcements and updates to our API
-          <input type="checkbox" name="subscribe" className="checkbox" checked />
-          <span className="mark"></span>
+          <input
+            type="checkbox"
+            name="isSubscribed"
+            className="checkbox"
+            checked={values.isSubscribed}
+          />
+          <span className="mark" onClick={handleChange}></span>
         </label>
       </div>
-      <button type="button" className="secondary-button">
+
+      <button
+        type="submit"
+        onSubmit={handleSubmit}
+        className="secondary-button"
+      >
         submit
       </button>
     </form>
@@ -41,5 +65,3 @@ function Form() {
 }
 
 export default Form;
-
-// https://github.com/safak/youtube/blob/react-form/src/App.jsx

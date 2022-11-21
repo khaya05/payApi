@@ -78,6 +78,7 @@ svg {
   --very-light-gray-15: hsla(207, 58%, 99%, 0.15);
   --very-light-gray-07: hsla(207, 58%, 99%, 0.7);
   --very-light-gray: hsla(207, 58%, 99%, 1);
+  --red-invalid: hsla(0, 100%, 50%, 0.7);
 
   --bg-color: rgb(237, 243, 248);
 }

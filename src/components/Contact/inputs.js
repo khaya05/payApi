@@ -8,7 +8,6 @@ export const inputs = [
     type: 'text',
     placeholder: 'name',
     errorMessage: "This field can't be empty",
-    pattern: '(.|s)*S(.|s)*',
     required: true,
   },
   {
@@ -17,8 +16,7 @@ export const inputs = [
     label: 'email',
     type: 'email',
     placeholder: 'email address',
-    errorMessage: "This field can't be empty",
-    pattern: '(.|s)*S(.|s)*',
+    errorMessage: 'This should be a valid email',
     required: true,
   },
   {
@@ -28,7 +26,6 @@ export const inputs = [
     type: 'text',
     placeholder: 'company name',
     errorMessage: "This field can't be empty",
-    pattern: '(.|s)*S(.|s)*',
     required: true,
   },
   {
@@ -38,17 +35,15 @@ export const inputs = [
     type: 'text',
     placeholder: 'title',
     errorMessage: "This field can't be empty",
-    pattern: '(.|s)*S(.|s)*',
     required: true,
   },
   {
     id: nanoid(),
-    name: 'name',
-    label: 'name',
+    name: 'massage',
+    label: 'massage',
     type: 'textarea',
     placeholder: 'message',
     errorMessage: "This field can't be empty",
-    pattern: '(.|s)*S(.|s)*',
     required: true,
   },
 ];
