@@ -40,8 +40,8 @@
   margin-top: 48px;
 }
 
-@media (min-width:48em) {
-  .other-features_{
+@media (min-width: 48em) {
+  .other-features_ {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 89.71%;
@@ -49,19 +49,17 @@
     place-items: start;
   }
 
-  .feature{
+  .feature {
     margin: 0;
   }
 
-  #other-features__section{
+  #other-features__section {
     padding-block: 100px;
   }
-  
 }
 
-@media (min-width:90em) {
-  .other-features_{
+@media (min-width: 90em) {
+  .other-features_ {
     max-width: 1110px;
   }
-  
 }
