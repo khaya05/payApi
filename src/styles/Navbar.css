@@ -94,6 +94,7 @@ nav ul li a {
     position: static;
     height: 100%;
     width: 100%;
+    margin-left: 65px;
   }
 
   nav ul,
