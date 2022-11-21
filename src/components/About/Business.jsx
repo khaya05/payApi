@@ -2,7 +2,7 @@ import React from 'react'
 
 function Business() {
   return (
-    <section className="about-section">
+    <section className="about-section_">
       <h3>our business</h3>
       <p>
         At the core of our platform is the technical infrastructure APIs that

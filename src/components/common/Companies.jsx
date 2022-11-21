@@ -1,4 +1,3 @@
-import React from 'react';
 import { ReactComponent as Tesla } from '../../assets/shared/desktop/tesla.svg';
 import { ReactComponent as Microsoft } from '../../assets/shared/desktop/microsoft.svg';
 import { ReactComponent as HP } from '../../assets/shared/desktop/hewlett-packard.svg';

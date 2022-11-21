@@ -9,7 +9,6 @@
   line-height: 56px;
   line-height: 36px;
   /* border:  1px solid red; */
-  width: 65%;
   width: 100%;
   padding-inline: 5%;
 }
@@ -46,6 +45,13 @@
     margin: 0  auto 93px;
     max-width: 1110px;
     gap: 11%;
+  }
+
+  .contact-page .pages-heading {
+    /* text-align: start; */
+    padding-inline: 0;
+    margin-inline-start: 0;
+      width: 65%;
   }
 
   .contact-page {

@@ -4,7 +4,7 @@
   text-align: center;
   padding: 80px 24px;
 }
-.brands__container {
+.brands-section__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +23,7 @@
 
 .brands__left {
   width: 87.2%;
+  /* border:1px solid red; */
 }
 
 .brands__left h2 {
@@ -79,18 +80,22 @@
     padding-block: 100px;
   }
 
-  .brands__container {
+  .brands-section__container {
     flex-direction: row;
+    justify-content: space-between;
     max-width: 1110px;
     margin-inline: auto;
+    /* border: 1px solid white; */
   }
 
   .brands__left {
-    width: 445px;
+    max-width: 445px;
     text-align: start;
+    width: 100%;
   }
 
-  .brands__right {
-    width: 536px;
+  .brands__right{
+    max-width: 536px;
+    /* border: px solid white; */
   }
 }

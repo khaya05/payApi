@@ -73,7 +73,6 @@
   border-radius: 24px;
   background: inherit;
   font-weight: 700;
-  /* transition: all 350ms; */
 }
 
 .secondary-button:hover {
@@ -85,8 +84,8 @@
 .plan-description {
   font-size: 15px;
   color: var(--light-blue);
-  /* margin-bottom: 19px; */
   padding-inline: 6%;
+  height: 15%;
 }
 
 @media (min-width: 48em) {
@@ -116,6 +115,7 @@
   .plan-description {
     text-align: start;
     padding: 0;
+    height: 10%
   }
 
   .pricing-plans-container {

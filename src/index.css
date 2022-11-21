@@ -115,23 +115,23 @@ h2 {
 
 /* about sections */
 .pages-heading,
-.about-section {
+.about-section_ {
   padding-inline: 6.23%;
   margin-top: 48px;
   margin-inline: auto;
 }
 
-.about-section {
+.about-section_ {
   text-align: center;
 }
 
-.about-section h3 {
+.about-section_ h3 {
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
 
-.about-section p {
+.about-section_ p {
   font-size: 15px;
   line-height: 28px;
   color: var(--light-blue);
@@ -142,17 +142,17 @@ h2 {
   text-align: center;
 }
 
-@media (min-width: 48px) {
-  .about-section {
+@media (min-width: 48em) {
+  .about-section_ {
     max-width: 1110px;
   }
-  .about-section {
+  .about-section_ {
     display: flex;
     justify-content: space-between;
     gap: 10px;
   }
 
-  .about-section p {
+  .about-section_ p {
     text-align: start;
     width: 66%;
   }
@@ -168,6 +168,10 @@ h2 {
     margin-top: 82px;
     width: 47%;
     margin-bottom: 42px;
+  }
+
+  .about-section_{
+    padding: 0;
   }
 }
 

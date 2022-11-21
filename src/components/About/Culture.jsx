@@ -2,7 +2,7 @@ import React from 'react'
 
 function Culture() {
   return (
-    <section className="about-section">
+    <section className="about-section_">
       <h3>the culture</h3>
       <p>
         We strongly believe there's always an opportunity to learn from each

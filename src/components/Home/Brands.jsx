@@ -5,7 +5,7 @@ import '../../styles/Brands.css';
 function Brands() {
   return (
     <section id="brands">
-      <div className="brands__container">
+      <div className="brands-section__container">
         <div className="brands__left">
           <h2>Who we work with</h2>
           <p>

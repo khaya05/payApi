@@ -53,5 +53,10 @@ img {
   .about__stats-container{
     margin-inline: auto;
     max-width: 1110px;
+
+  }
+
+  .stats__container{
+    margin-inline: 0;
   }
 }

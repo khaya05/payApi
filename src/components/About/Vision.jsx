@@ -2,7 +2,7 @@ import React from 'react'
 
 function Vision() {
   return (
-    <section className="about-section">
+    <section className="about-section_">
       <h3>our vision</h3>
       <p>
         Our main goal is to build beautiful consumer experiences along with
