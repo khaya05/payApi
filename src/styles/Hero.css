@@ -1,6 +1,33 @@
 header {
   padding: 0 24px;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+#hero::after {
+  content: url('../assets/shared/bg/bg-light.svg');
+  position: absolute;
+  width: 170%;
+  right: -35%;
+  bottom: 72%;
+  z-index: -1;
+}
+
+@media (min-width: 48em) {
+  #hero::after {
+    width: 120%;
+    right: -10%;
+    bottom: 72%;
+  }
+}
+
+@media (min-width: 90em) {
+  #hero::after {
+    width: 50%;
+    left: 57%;
+    bottom: 25%;
+  }
 }
 
 .header__container {
@@ -36,7 +63,7 @@ header figure {
   display: grid;
   place-items: center;
   border-radius: 10%;
-   /* box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727); */
+  /* box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727); */
 }
 
 @media (min-width: 48em) {
@@ -47,7 +74,7 @@ header figure {
 }
 
 @media (min-width: 90em) {
-  header{
+  header {
     margin-top: 74px;
   }
   .header__container {
@@ -63,11 +90,10 @@ header figure {
     /* height: 500px; */
   }
 
-  .header__main-container{
+  .header__main-container {
     max-width: 546px;
   }
   .hero-container h1 {
-    
     text-align: start;
   }
 

@@ -3,12 +3,49 @@
   color: white;
   text-align: center;
   padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0   auto;
+}
+
+#brands::before {
+  content: url('../assets/shared/bg/bg-dark.svg');
+  position: absolute;
+  bottom: 67%;
+  left: -50%;
+  z-index: 0;
+  width: 200%;
+}
+
+@media (min-width: 48em) {
+  #brands::before {
+    bottom: 60%;
+    left: calc(-5%);
+    width: 109%;
+  }
+}
+
+
+@media (min-width: 90em) {
+  #brands::before {
+    bottom: 8%;
+    left: calc(-30%);
+    width: 75%;
+  }
 }
 .brands-section__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column-reverse;
+  position: relative;
+  z-index: 2;
+}
+
+.companies__container {
+  position: relative;
+  z-index: 2;
 }
 
 .companies__container .brand-icon path {
@@ -94,7 +131,7 @@
     width: 100%;
   }
 
-  .brands__right{
+  .brands__right {
     max-width: 536px;
     /* border: px solid white; */
   }

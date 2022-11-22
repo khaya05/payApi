@@ -6,7 +6,7 @@ import '../../styles/Hero.css';
 
 function Hero() {
   return (
-    <header>
+    <header id='hero'>
       <div className="header__container">
         <figure>
           <img src={homePhoneMockup} alt="phone mockup" />
