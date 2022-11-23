@@ -4,7 +4,7 @@ import '../../styles/SimpleUI.css';
 function SimpleUI() {
   return (
     <section id="simple-ui">
-      <div className="section__container">
+      <div className="section__container simple-ui-section-container">
         <figure className="simple-ui-figure">
           <img src={simpleUIIcon} alt="" aria-hidden="true" />
         </figure>

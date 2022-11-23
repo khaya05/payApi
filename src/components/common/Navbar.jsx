@@ -9,6 +9,10 @@ import '../../styles/Navbar.css';
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
 
+  const handleLinkClick = () => {
+    setShowLinks((oldVal) => !oldVal);
+  };
+
   return (
     <nav>
       <Link to="./">
@@ -31,7 +35,7 @@ function Navbar() {
         {/* nav links */}
         <ul>
           {links.map(({ id, name, path }) => (
-            <li key={id}>
+            <li key={id} onClick={handleLinkClick}>
               <NavLink to={path}>{name}</NavLink>
             </li>
           ))}

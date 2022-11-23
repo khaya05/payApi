@@ -1,13 +1,14 @@
-import React from 'react'
-import { Heading, Plans } from '../components'
+import React from 'react';
+import { Heading, Navbar, Plans } from '../components';
 
 function Pricing() {
   return (
-    <main>
+    <main id="pricing">
+      <Navbar />
       <Heading heading={'Pricing'} />
       <Plans />
     </main>
-  )
+  );
 }
 
-export default Pricing
+export default Pricing;

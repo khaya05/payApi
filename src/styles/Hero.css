@@ -3,31 +3,8 @@ header {
   margin-bottom: 80px;
   position: relative;
   z-index: 2;
-}
+  /* overflow-x: hidden; */
 
-#hero::after {
-  content: url('../assets/shared/bg/bg-light.svg');
-  position: absolute;
-  width: 170%;
-  right: -35%;
-  bottom: 72%;
-  z-index: -1;
-}
-
-@media (min-width: 48em) {
-  #hero::after {
-    width: 120%;
-    right: -10%;
-    bottom: 72%;
-  }
-}
-
-@media (min-width: 90em) {
-  #hero::after {
-    width: 50%;
-    left: 57%;
-    bottom: 25%;
-  }
 }
 
 .header__container {
@@ -66,10 +43,18 @@ header figure {
   /* box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727); */
 }
 
+.hero-container h1 {
+  line-height: 36px;
+}
+
 @media (min-width: 48em) {
   header figure {
     width: 26%;
     margin-bottom: 48px;
+  }
+
+  .hero-container h1 {
+    line-height: 56px;
   }
 }
 
@@ -95,6 +80,7 @@ header figure {
   }
   .hero-container h1 {
     text-align: start;
+    line-height: 72px;
   }
 
   .header__main-container p {

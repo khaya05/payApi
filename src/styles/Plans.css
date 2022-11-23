@@ -115,7 +115,7 @@
   .plan-description {
     text-align: start;
     padding: 0;
-    height: 10%
+    height: 10%;
   }
 
   .pricing-plans-container {
@@ -124,8 +124,7 @@
     margin-bottom: 76px;
   }
 
-  .plan-features li{
+  .plan-features li {
     margin-inline: 0;
   }
-  
 }

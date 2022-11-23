@@ -86,6 +86,11 @@ svg {
 body {
   font-family: 'Public Sans';
   background: var(--bg-color);
+  overflow-x: hidden;
+  max-width: 1440px;
+  /* border: 1px solid green; */
+  overflow-x: hidden;
+  margin-inline: auto;
 }
 
 h1,
@@ -140,6 +145,7 @@ h2 {
 /* pages-heading */
 .pages-heading {
   text-align: center;
+  line-height: 36px;
 }
 
 @media (min-width: 48em) {
@@ -156,6 +162,10 @@ h2 {
     text-align: start;
     width: 66%;
   }
+
+  .pages-heading {
+    line-height: 56px;
+  }
 }
 
 @media (min-width: 90em) {
@@ -170,8 +180,70 @@ h2 {
     margin-bottom: 42px;
   }
 
-  .about-section_{
+  .about-section_ {
     padding: 0;
+  }
+}
+.pages-heading {
+  position: relative;
+}
+#about,
+#pricing,
+#contact {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#about::before,
+#pricing::before,
+#contact::before {
+  content: url('./assets/shared/bg/bg-light.svg');
+  position: absolute;
+  top: -50%;
+  right: -100%;
+  width: 170%;
+  z-index: -1;
+}
+
+#pricing::before,
+#about::before {
+  top: -30%;
+}
+
+@media (min-width: 48em) {
+  #about::before,
+  #pricing::before,
+  #contact::before {
+    width: 140%;
+    right: -100%;
+    top: -50%;
+  }
+
+  #pricing::before{
+    top:-84.3%;
+  }
+
+  #contact::before {
+    top: -58.7%
+  }
+}
+@media (min-width: 90em) {
+  #about::before,
+  #pricing::before,
+  #contact::before {
+    width: 65%;
+    right: -10%;
+    top: -60%;
+  }
+
+   #pricing::before{
+    top:-62.5%;
+  }
+
+  #about::before {
+    right: -10%;
+    top: -42.45%;
   }
 }
 
