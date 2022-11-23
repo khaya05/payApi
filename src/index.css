@@ -112,7 +112,7 @@ h2 {
     font-size: 48px;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   h1 {
     font-size: 72px;
   }
@@ -168,7 +168,7 @@ h2 {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .pages-heading {
     margin: 0;
     padding: 0;
@@ -228,7 +228,7 @@ h2 {
     top: -58.7%;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   #about::before,
   #pricing::before,
   #contact::before {

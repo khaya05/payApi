@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   #simple-ui .section__container {
     flex-direction: row-reverse;
   }

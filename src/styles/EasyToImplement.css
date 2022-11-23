@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   #implement {
     padding-block-start: 100px;
   }

@@ -46,7 +46,7 @@ label {
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   }
 
-  @media (min-width: 64em) {
+  @media (min-width: 75em) {
     .email-form {
       margin: 0;
     }

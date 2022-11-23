@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .plan-description {
     text-align: start;
     padding: 0;

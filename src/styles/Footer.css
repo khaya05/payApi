@@ -71,7 +71,7 @@ footer ul li {
     top: -400%;
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .footer__container::before {
     width: 70%;
     left: 77%;
@@ -114,7 +114,7 @@ footer ul li {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .footer__container {
     max-width: 1111px;
   }

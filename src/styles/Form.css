@@ -33,12 +33,11 @@ input[type='checkbox'] {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .mark {
     top: 7px;
   }
 }
-
 
 .label input:active ~ .mark {
   background-color: var(--blue);

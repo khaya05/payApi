@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 75em) {
   .other-features_ {
     max-width: 1110px;
   }

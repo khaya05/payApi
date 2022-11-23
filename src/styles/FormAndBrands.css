@@ -37,7 +37,7 @@
   fill: var(--blue);
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   .form-and-brands-container {
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,6 @@
   }
 
   .contact-page .pages-heading {
-    /* text-align: start; */
     padding-inline: 0;
     margin-inline-start: 0;
       width: 65%;

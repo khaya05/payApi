@@ -3,8 +3,6 @@ header {
   margin-bottom: 80px;
   position: relative;
   z-index: 2;
-  /* overflow-x: hidden; */
-
 }
 
 .header__container {
@@ -57,7 +55,7 @@ header figure {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 75em) {
   header {
     margin-top: 74px;
   }
@@ -66,12 +64,10 @@ header figure {
     margin-inline: auto;
     flex-direction: row-reverse;
     gap: 20%;
-    /* justify-content: ; */
   }
 
   header figure {
     max-width: 263px;
-    /* height: 500px; */
   }
 
   .header__main-container {
