@@ -18,4 +18,5 @@ export { default as ReadyToStart } from './common/ReadyToStart';
 export { default as Plans } from './Pricinng/Plans';
 export { default as Form } from './Contact/Form';
 export { default as FormAndBrands } from './Contact/FormAndBrands';
-export {default as Companies} from './common/Companies'
+export { default as Companies } from './common/Companies'
+export {default as ScrollToTop} from './common/ScrollToTop'

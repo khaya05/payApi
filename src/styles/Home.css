@@ -22,7 +22,7 @@
 
 @media (min-width: 75em) {
   #hero::after {
-    width: 50%;
+    width: 70%;
     left: 57%;
     bottom: 25%;
   }

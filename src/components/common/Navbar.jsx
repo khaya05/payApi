@@ -15,12 +15,14 @@ function Navbar() {
 
   return (
     <nav>
-      <Link to="./">
+      <Link to="/">
         <img src={logo} alt="log" className="logo" />
       </Link>
 
       <div
-        className={`nav__nav-links_btn-container ${showLinks && 'show-links'}`}
+        className={`nav-links-and-mobile-close-btn-container ${
+          showLinks && 'show-links'
+        }`}
       >
         {/* close menu icon */}
         <button

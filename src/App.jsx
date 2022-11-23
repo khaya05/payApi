@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home, About, Pricing, Contact } from './pages';
-import { Navbar, Footer, ReadyToStart } from './components';
+import { Navbar, Footer, ReadyToStart, ScrollToTop } from './components';
 
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
-      <main id='main'>
-        {/* <Navbar /> */}
+      <ScrollToTop />
+      <main id="main">
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/about" element={<About />} />

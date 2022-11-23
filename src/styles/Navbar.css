@@ -21,7 +21,7 @@ nav {
   }
 }
 
-.nav__nav-links_btn-container {
+.nav-links-and-mobile-close-btn-container {
   position: fixed;
   right: 0;
   top: 0;
@@ -57,7 +57,7 @@ nav button span {
   background-color: inherit;
   border: none;
   position: relative;
-  left: 235px;
+  right: -93.7%;
   margin-bottom: 24px;
 }
 
@@ -92,7 +92,7 @@ nav {
 @media (min-width: 40em) {
   nav,
   .show-menu,
-  .nav__nav-links_btn-container {
+  .nav-links-and-mobile-close-btn-container {
     position: relative;
     z-index: 100;
   }
@@ -102,13 +102,14 @@ nav {
     display: none;
   }
 
-  .nav__nav-links_btn-container {
+  .nav-links-and-mobile-close-btn-container {
     transform: none;
     transition: none;
     position: static;
     height: 100%;
     width: 100%;
     margin-left: 65px;
+    background-color: inherit;
   }
 
   nav ul {
@@ -116,7 +117,7 @@ nav {
   }
 
   nav ul,
-  .nav__nav-links_btn-container {
+  .nav-links-and-mobile-close-btn-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
