@@ -106,13 +106,13 @@ h2 {
   font-size: 2rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   h1,
   h2 {
     font-size: 48px;
   }
 }
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   h1 {
     font-size: 72px;
   }
@@ -148,7 +148,7 @@ h2 {
   line-height: 36px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .about-section_ {
     max-width: 1110px;
   }
@@ -168,7 +168,7 @@ h2 {
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   .pages-heading {
     margin: 0;
     padding: 0;
@@ -211,7 +211,7 @@ h2 {
   top: -30%;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   #about::before,
   #pricing::before,
   #contact::before {
@@ -220,15 +220,15 @@ h2 {
     top: -50%;
   }
 
-  #pricing::before{
-    top:-84.3%;
+  #pricing::before {
+    top: -84.3%;
   }
 
   #contact::before {
-    top: -58.7%
+    top: -58.7%;
   }
 }
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   #about::before,
   #pricing::before,
   #contact::before {
@@ -237,8 +237,8 @@ h2 {
     top: -60%;
   }
 
-   #pricing::before{
-    top:-62.5%;
+  #pricing::before {
+    top: -62.5%;
   }
 
   #about::before {

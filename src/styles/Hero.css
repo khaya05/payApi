@@ -40,14 +40,13 @@ header figure {
   display: grid;
   place-items: center;
   border-radius: 10%;
-  /* box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727); */
 }
 
 .hero-container h1 {
   line-height: 36px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   header figure {
     width: 26%;
     margin-bottom: 48px;
@@ -58,7 +57,7 @@ header figure {
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   header {
     margin-top: 74px;
   }

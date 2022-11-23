@@ -4,13 +4,13 @@
   margin-bottom: 48px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .simple-ui-figure {
     width: 63.35%;
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   #simple-ui .section__container {
     flex-direction: row-reverse;
   }

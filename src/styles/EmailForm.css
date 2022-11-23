@@ -34,7 +34,7 @@ label {
   display: none;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .email-form {
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ label {
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   }
 
-  @media (min-width: 90em) {
+  @media (min-width: 64em) {
     .email-form {
       margin: 0;
     }

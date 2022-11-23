@@ -64,14 +64,14 @@ footer ul li {
   z-index: -1;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .footer__container::before {
     width: 70%;
     left: 53%;
     top: -400%;
   }
 }
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   .footer__container::before {
     width: 70%;
     left: 77%;
@@ -79,7 +79,7 @@ footer ul li {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .footer__container,
   .footer__nav-links,
   .footer__left {
@@ -114,7 +114,7 @@ footer ul li {
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   .footer__container {
     max-width: 1111px;
   }

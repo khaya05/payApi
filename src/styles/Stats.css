@@ -32,7 +32,7 @@ img {
   font-size: 56px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .stats__container {
     flex-direction: row;
     border: none;
@@ -49,14 +49,13 @@ img {
   }
 }
 
-@media (min-width: 90em) {
-  .about__stats-container{
+@media (min-width: 64em) {
+  .about__stats-container {
     margin-inline: auto;
     max-width: 1110px;
-
   }
 
-  .stats__container{
+  .stats__container {
     margin-inline: 0;
   }
 }

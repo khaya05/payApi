@@ -30,7 +30,7 @@
   font-size: 15px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .section__figure {
     width: 51%;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   #implement {
     padding-block-start: 100px;
   }

@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   max-width: 1440px;
-  margin: 0   auto;
+  margin: 0 auto;
 }
 
 #brands::before {
@@ -18,7 +18,7 @@
   width: 200%;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   #brands::before {
     bottom: 60%;
     left: calc(-5%);
@@ -26,8 +26,7 @@
   }
 }
 
-
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   #brands::before {
     bottom: 8%;
     left: calc(-30%);
@@ -112,7 +111,7 @@
   }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 64em) {
   #brands {
     padding-block: 100px;
   }
