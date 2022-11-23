@@ -29,7 +29,6 @@
     content: url('../assets/shared/bg/bg-light.svg');
     position: absolute;
     width: 780px;
-    /* width: 30%; */
     bottom: -20%;
     right: -50%;
     z-index: -1;
