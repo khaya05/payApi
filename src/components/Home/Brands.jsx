@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Companies } from '../../components';
+import { useInView } from 'react-intersection-observer';
+
 import '../../styles/Brands.css';
 
 function Brands() {
+  const { ref, inView} = useInView({ threshold: 0.2, triggerOnce:true });
+
   return (
-    <section id="brands">
+    <section
+      id="brands"
+      className={`  ${inView ? 'show-section' : 'hide-section'}`}
+      ref={ref}
+    >
       <div className="brands-section__container">
         <div className="brands__left">
           <h2>Who we work with</h2>

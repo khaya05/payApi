@@ -1,3 +1,4 @@
+import { useInView } from 'react-intersection-observer';
 import {
   Business,
   Culture,
@@ -8,20 +9,22 @@ import {
   Vision,
 } from '../components';
 
-
 function About() {
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
   const heading =
     'We empower innovators by delivering access to the financial system';
-  
+
   return (
-    <main id='about'>
+    <main id="about">
       <Navbar />
       <Heading heading={heading} />
-      <Vision />
-      <Business />
-      <Stats />
-      <Culture />
-      <People />
+      <div className={`${inView ? 'show-section' : 'hide-section'}`} ref={ref}>
+        <Vision />
+        <Business />
+        <Stats />
+        <Culture />
+        <People />
+      </div>
     </main>
   );
 }

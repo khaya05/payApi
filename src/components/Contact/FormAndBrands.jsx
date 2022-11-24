@@ -1,12 +1,20 @@
 import React from 'react';
 import Form from './Form';
 import { Companies } from '../';
+import { useInView } from 'react-intersection-observer';
 
-import '../../styles/FormAndBrands.css'
+import '../../styles/FormAndBrands.css';
 
 function FormAndBrands() {
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+
   return (
-    <div className='form-and-brands-container'>
+    <div
+      className={`form-and-brands-container ${
+        inView ? 'show-section' : 'hide-section'
+      }`}
+      ref={ref}
+    >
       <div className="form___container">
         <Form />
       </div>

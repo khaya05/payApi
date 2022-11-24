@@ -1,12 +1,19 @@
 import { homePhoneMockup } from '../../assets';
 import { EmailForm } from '../';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
 
 import '../../styles/Hero.css';
 
 function Hero() {
+  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+
   return (
-    <header id='hero'>
+    <header
+      id="hero"
+      className={`${inView ? 'show-section' : 'hide-section'}`}
+      ref={ref}
+    >
       <div className="header__container">
         <figure>
           <img src={homePhoneMockup} alt="phone mockup" />
